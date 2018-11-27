@@ -14,4 +14,6 @@ mkdir github
 mkdir gitlab
 mkdir bitbucket
 cd ..
+) else (
+echo Sorry dirrectory alredy exist
 )
