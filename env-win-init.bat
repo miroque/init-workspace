@@ -12,4 +12,6 @@ mkdir work
 cd  work
 mkdir github
 mkdir gitlab
+mkdir bitbucket
+cd ..
 )
