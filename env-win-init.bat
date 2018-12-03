@@ -1,4 +1,5 @@
 rem https://commandwindows.com/batch.htm
+rem https://stackoverflow.com/a/47361106/1679702
 echo off
 cd c:
 cd \
