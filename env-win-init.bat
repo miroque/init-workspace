@@ -1,11 +1,17 @@
+rem https://commandwindows.com/batch.htm
 echo off
 cd c:
 cd \
-if not exist a.panov (
-echo Generatin initial personal folder
-mkdir a.panov
-echo go into it
-cd a.panov
+set /p mainfolder=What main folder? 
+if not exist %mainfolder% (
+echo Generatin initial %mainfolder% folder
+mkdir %mainfolder%
+echo Go into it
+cd %mainfolder%
+) else (
+echo Already exists go into it
+cd %mainfolder%
+)
 mkdir downloads
 mkdir tools
 mkdir books
@@ -15,6 +21,5 @@ mkdir github
 mkdir gitlab
 mkdir bitbucket
 cd ..
-) else (
-echo Sorry dirrectory alredy exist
-)
+
+cd C:\devwork\__2onenote\bitbucket\env-win
