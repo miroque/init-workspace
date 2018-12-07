@@ -1,3 +1,4 @@
+Get-ExecutionPolicy
 echo "Going to Drive C:"
 echo "List the root catalog"
 
