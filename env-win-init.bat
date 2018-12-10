@@ -1,26 +1,2 @@
-rem https://commandwindows.com/batch.htm
-rem https://stackoverflow.com/a/47361106/1679702
-echo off
-cd c:
-cd \
-set /p mainfolder=What main folder? 
-if not exist %mainfolder% (
-echo Generatin initial %mainfolder% folder
-mkdir %mainfolder%
-echo Go into it
-cd %mainfolder%
-) else (
-echo Already exists go into it
-cd %mainfolder%
-)
-mkdir downloads
-mkdir tools
-mkdir books
-mkdir work
-cd  work
-mkdir github
-mkdir gitlab
-mkdir bitbucket
-cd ..
-
-cd C:\devwork\__2onenote\bitbucket\env-win
+powershell -Command "Start-Process powershell 'Set-ExecutionPolicy RemoteSigned' -Verb RunAs"
+powershell -file env-win-init.ps1
