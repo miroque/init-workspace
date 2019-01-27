@@ -34,6 +34,7 @@ foreach ($item in $firstLevelFolders){
 Set-Location $firstLevelFolders[2]
 
 $secondLevelFolders = New-Object System.Collections.ArrayList
+[void]$secondLevelFolders.Add("__notes")
 [void]$secondLevelFolders.Add("github")
 [void]$secondLevelFolders.Add("gitlab")
 [void]$secondLevelFolders.Add("bitbucket")
