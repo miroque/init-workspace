@@ -1,6 +1,8 @@
-Write-Output "Going to Drive C:"
-c:
-cd \
+$diskLetter = Read-Host "What Disk Letter?"
+$diskletter += ':\'
+
+Write-Output "Going to Drive $diskLetter"
+Set-Location $diskLetter
 
 $mainFolder = Read-Host 'What will be the main folder name?'
 
