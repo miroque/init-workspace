@@ -4,6 +4,8 @@ $diskletter += ':\'
 Write-Output "Going to Drive $diskLetter"
 Set-Location $diskLetter
 
+$workCompanyName = Read-Host "What the name of your work company?"
+
 $mainFolder = Read-Host 'What will be the main folder name?'
 
 # if exists
@@ -40,6 +42,7 @@ $secondLevelFolders = New-Object System.Collections.ArrayList
 [void]$secondLevelFolders.Add("github")
 [void]$secondLevelFolders.Add("gitlab")
 [void]$secondLevelFolders.Add("bitbucket")
+[void]$secondLevelFolders.Add($workCompanyName)
 
 foreach ($item in $secondLevelFolders){
     If(!(Test-Path $item))
