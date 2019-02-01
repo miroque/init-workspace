@@ -40,6 +40,7 @@ Set-Location $firstLevelFolders[2]
 $secondLevelFolders = New-Object System.Collections.ArrayList
 [void]$secondLevelFolders.Add("__notes")
 [void]$secondLevelFolders.Add("pets")
+[void]$secondLevelFolders.Add("study")
 [void]$secondLevelFolders.Add($workCompanyName)
 
 foreach ($item in $secondLevelFolders){
